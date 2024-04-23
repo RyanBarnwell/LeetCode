@@ -1,4 +1,3 @@
-import numpy as np
 class Solution(object):
     def firstMissingPositive(self, nums):
         length = len(nums)
