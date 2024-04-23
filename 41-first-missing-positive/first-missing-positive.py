@@ -7,7 +7,6 @@ class Solution(object):
         nums = nums[nums>0]
         nums = list(set(nums))
         nums.sort()
-        print(nums)
         
         if(len(nums) == 0):
             return 1
