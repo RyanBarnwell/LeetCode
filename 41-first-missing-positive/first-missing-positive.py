@@ -1,5 +1,4 @@
 import numpy as np
-
 class Solution(object):
     def firstMissingPositive(self, nums):
         nums = np.array(nums)
@@ -7,7 +6,6 @@ class Solution(object):
         nums = nums[nums>0]
         nums = list(set(nums))
         nums.sort()
-        
         if(len(nums) == 0):
             return 1
         
