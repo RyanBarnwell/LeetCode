@@ -1,0 +1,18 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        #val array
+        val = []
+        inArr = []
+        #to find in single loop, look for target - nums(x) prev encountered
+        for x in range(0, len(nums)):
+            #Temp store in arr
+            inArr.append(x)
+            #finds target val
+            find = target - nums[x]
+            for y in range(0, len(val)):
+                if find == val[y]:
+                    inArr.append(y)
+                    return inArr
+            #stores val after check
+            val.append(nums[x])
+            inArr.pop()
